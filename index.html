@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纸带计算器 · Tape Calculator</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.7 system-ui, sans-serif; }
+    body { margin: 0; background: #f4f6fa; color: #17223a; }
+    header { background: #234ad8; color: #fff; }
+    header div, main { max-width: 46rem; margin: auto; padding: 1.5rem max(1.25rem, env(safe-area-inset-left)); }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 .6rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .6rem 1.25rem; }
+    nav a { color: inherit; }
+    a { text-underline-offset: .2em; }
+    main > section { padding: 1.2rem 0; border-bottom: 1px solid #cdd7eb; }
+    main > section:last-child { border-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #111723; color: #edf2ff; }
+      main a { color: #b7c7ff; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>纸带计算器 · <span lang="en">Tape Calculator</span></h1>
+      <nav aria-label="Language / 语言">
+        <a href="#zh-Hans" lang="zh-Hans">简体中文</a>
+        <a href="#zh-Hant" lang="zh-Hant">繁體中文</a>
+        <a href="#en" lang="en">English</a>
+        <a href="#privacy">隐私 · Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="zh-Hans" lang="zh-Hans">
+      <h2>帮助</h2>
+      <p>每行写一笔金额。可输入「打车 32.50」「-10 退款」，也可用制表符分隔金额和备注。小数请用点。点金额即可修改，标红的金额核对完后即可复制或分享。</p>
+      <p>打开「更多 → 从文件导入」可导入 .sumtape 文件。试用到期后，原有纸带和文件导入仍可使用。「更多 → 设置」可恢复购买。</p>
+      <p>联系支持 <a href="mailto:2522855586@qq.com">2522855586@qq.com</a></p>
+    </section>
+    <section id="zh-Hant" lang="zh-Hant">
+      <h2>說明</h2>
+      <p>每列輸入一筆金額。可輸入「計程車 32.50」「-10 退款」，也可用定位字元分隔金額與備註。小數請用點。點選金額即可修改，核對所有紅色金額後即可複製或分享。</p>
+      <p>開啟「更多 → 從檔案匯入」可匯入 .sumtape 檔案。試用到期後仍可使用現有紙帶並匯入檔案。「更多 → 設定」可復原購買。</p>
+      <p>聯絡支援 <a href="mailto:2522855586@qq.com">2522855586@qq.com</a></p>
+    </section>
+    <section id="en" lang="en">
+      <h2>Support</h2>
+      <p>Enter one amount per line. Try “Taxi 32.50” or “-10 Refund”, or use a tab between the amount and note. Use a decimal point. Tap an amount to edit it. Fix highlighted amounts before copying or sharing.</p>
+      <p>Use More → Import from Files to open a .sumtape file. You can still use saved tapes and import files after the trial. To restore a purchase, open More → Settings.</p>
+      <p>Contact <a href="mailto:2522855586@qq.com">2522855586@qq.com</a></p>
+    </section>
+    <section id="privacy">
+      <h2>隐私 · 隱私 · <span lang="en">Privacy</span></h2>
+      <p lang="zh-Hans">纸带计算器不收集数据。金额、备注及试用状态保存在本机。应用无账号、广告或统计。仅在你主动粘贴或导入时读取相应内容。分享目的地由你选择。App Store 处理购买及恢复。</p>
+      <p lang="zh-Hant">紙帶計算機不收集資料。金額、備註與試用狀態儲存在本機。App 沒有帳號、廣告或統計。只在你主動貼上或匯入時讀取內容。分享對象由你選擇。App Store 處理購買與復原。</p>
+      <p lang="en">Tape Calculator does not collect data. Amounts, notes and trial state are stored on your device. The app has no accounts, ads or analytics. It reads clipboard or file content when you paste or import it. You choose where to share. The App Store handles purchases and restoration.</p>
+    </section>
+  </main>
+</body>
+</html>
